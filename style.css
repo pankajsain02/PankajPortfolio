@@ -397,3 +397,53 @@ footer {
     padding: 18px 20px;
   }
 }
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    background: rgba(34, 34, 34, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .nav-links a:hover {
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+}
+
